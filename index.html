@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="travel.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="images/travel-icon.png" rel="icon">
+    <title>ExploreIndia</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="index.html" id="logo"><span>Explore</span>India.com</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#book">Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#packages">Packages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                 
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-danger" type="button">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="main-bg">
+            <div class="content">
+                <h3>Welcome to India</h3>
+                <h1>Visit <span class="change-content"> </span></h1>
+              
+                <a href="#book">Book now</a>
+            </div>
+        </div>
+        <section class="book" id="book">
+            <div class="container">
+                <div class="m-head">
+                    <h1>Book</h1>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6 py-3 py-md-0">
+                            <div class="card">
+                                <img src="images/Walking Character Travel by walking hiking.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-3 py-md-0">
+                            <form action="" class="form" onsubmit="return validate()">
+                                <input type="text" class="form-control" name="whereTo" placeholder="Where to" required><br>
+                                <input type="text" class="form-control" name="howMany" placeholder="How many" required><br>
+                                <input type="date" class="form-control" name="arrivals" required><br>
+                                <input type="date" class="form-control" name="leaving" required><br>
+                                <textarea class="form-control" name="text" rows="5" placeholder="Enter your name & details" required></textarea><br>
+                                <input type="submit" value="Book now" class="submit">
+                            </form>
+                        </div>
+                    </div>
+                
+            </div>
+        </section>
+        <section class="packages" id="packages">
+            <div class=" container">
+                <div class="main-text">
+                    <h1>Packages</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 py-md-0">
+                        <div class="card">
+                            <img class="img-fluid" src="images/RAJASTHAN 🇮🇳™ on Instagram_ “HAWA MAHAL 🇮🇳….jpeg" alt="">
+                            <div class="card-body">
+                                <h3>Rajasthan</h3>
+                                <p>Rajasthan is known for its rich cultural heritage, historic architecture, vibrant festivals, and diverse landscapes, making it a popular tourist destination.</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <h6>Price: <strong>₹10,000</strong></h6>
+                                <a href="#book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-md-0">
+                        <div class="card">
+                            <img class="img-fluid" src="images/taj pack.jpg" alt="">
+                            <div class="card-body">
+                                <h3>Agra</h3>
+                                <p>Agra's tourism primarily revolves around this architectural wonder, but the city also boasts other historical and cultural attractions. It is most fomous for Taj mahal<br></p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <h6>Price: <strong>₹12,000</strong></h6>
+                                <a href="#book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-md-0">
+                        <div class="card">
+                            <img class="img-fluid" src="images/Solang valley, Manali🔥🌎🌈.jpeg" alt="">
+                            <div class="card-body">
+                                <h3>Manali</h3>
+                                <p>Manali is a picturesque hill station located in the state of Himachal Pradesh in northern India. It is nestled in the lush green Kullu Valley of the Himalayas.</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <h6>Price: <strong>₹15,000</strong></h6>
+                                <a href="#book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 py-md-0">
+                        <div class="card">
+                            <img class="img-fluid" src="images/Palolem.jpeg" alt="">
+                            <div class="card-body">
+                                <h3>Goa</h3>
+                                <p>Goa, located on the western coast of India, is a renowned tourist destination known for its beautiful beaches, vibrant culture, and rich history.  </p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <h6>Price: <strong>₹8,000</strong></h6>
+                                <a href="#book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-md-0">
+                        <div class="card">
+                            <img class="img-fluid" src="images/Houseboat Cruise In Alleppey - The Best To Experience.jpeg" alt="">
+                            <div class="card-body">
+                                <h3>Kerala</h3>
+                                <p>Kerala, often referred to as "God's Own Country," is a picturesque state located in the southern part of India. Kerala is a popular tourist destination.</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <h6>Price: <strong>₹12,000</strong></h6>
+                                <a href="#book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-md-0">
+                        <div class="card">
+                            <img class="img-fluid" src="images/aa07d028-a0ed-4921-947d-1bf60bc6c04c.jpeg" alt="">
+                            <div class="card-body">
+                                <h3>Jammu</h3>
+                                <p>Jammu, also known as the "City of Temples," is the winter capital of the Indian union territory of Jammu and Kashmir. It is a region rich in history,culture and natural beauty</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <h6>Price: <strong>₹20,000</strong></h6>
+                                <a href="#book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="main-text">
+                    <h1>Services</h1>
+                </div>
+
+                <div class="row" style="margin-top:30px">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-hotel"></i>
+                        <div class="card-body">
+                        <h3>Affordable Hotel</h3>
+                        <p>Here we take pride in providing affordable accommodations without compromising on the quality of your stay. Our commitment to guest satisfaction means you can enjoy all the comforts of a top-notch hotel without breaking the bank.</p>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-utensils"></i>
+                        <div class="card-body">
+                        <h3>Food</h3>
+                        <p>We take great pride in offering a culinary experience that's not only satisfying but also memorable. we understand that good food is an essential part of any journey. Our commitment to providing delightful dining options sets us apart.</p>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-hiking"></i>
+                        <div class="card-body">
+                        <h3>Adventure</h3>
+                        <p>Are you ready for an adrenaline-pumping escape? we're your gateway to a world of exhilarating adventure activities. Get your heart racing and create memories that will last a lifetime.so buckle up and enjoy your stay with us.</p>
+                    </div>
+                    </div>
+
+                </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="main-text">
+                    <h1>About Us</h1>
+                </div>
+                <div class="row" style="margin-top:50px">
+                <div class="col-md-5 py-3 py-md-0">
+                    <div class="card">
+                        <img src="images/Download Airplane traveling around globe and hand with passport and ticket for free.jpeg" alt="">
+
+                    </div>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    
+                    <p>Travel is not merely a journey from one place to another; it is a voyage of self-discovery, an exploration of the world's wonders, and a celebration of the diversity that makes our planet so extraordinary. It is a symphony of sights, sounds, and tastes that awaken the senses and ignite the spirit.Let us be a part of your beautiful journey.</p>
+                    <h3>Contact </h3>
+                    <p><b>Address:</b>Kaloor,Metro piller no.568,Bank road</p>
+                    <p><b>Ph No:</b>+91 9854123658,+91 9421583525</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <h1>Travel</h1>
+        <p>Travel is not merely a journey from one place to another; it is a voyage of self-discovery, an exploration of the world's wonders, and a celebration of the diversity that makes our planet so extraordinary. It is a symphony of sights, sounds, and tastes that awaken the senses and ignite the spirit.Let us be a part of your beautiful journey</p>
+        <div class="social-links">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest-p"></i> 
+        </div>
+        <div class="credits">
+            <p>Designed By Abhishek</p>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright. All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function validate() {
+            const whereTo = document.querySelector('input[name="whereTo"]').value;
+            const howMany = document.querySelector('input[name="howMany"]').value;
+            const arrivals = document.querySelector('input[name="arrivals"]').value;
+            const leaving = document.querySelector('input[name="leaving"]').value;
+            const details = document.querySelector('textarea[name="text"]').value;
+           
+
+            // Check if "Where to" contains only characters
+            if (!/^[A-Za-z\s]+$/.test(whereTo)) {
+                alert("Please enter a valid 'Where to' with letters and spaces only.");
+                return false;
+
+            }
+             if (!/^\d+$/.test(howMany)) {
+                alert("Please enter a valid number for 'How many'.");
+                return false;
+            }
+
+            // Check if required fields are empty
+            if (whereTo.trim() === "" || howMany.trim() === "" || arrivals.trim() === "" || leaving.trim() === "" || details.trim() === "") {
+                alert("Please fill in all required fields.");
+                return false;
+            }
+
+            // Check if the "Arrivals" date is earlier than the "Leaving" date
+            if (new Date(arrivals) >= new Date(leaving)) {
+                alert("The 'Arrivals' date must be earlier than the 'Leaving' date.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
